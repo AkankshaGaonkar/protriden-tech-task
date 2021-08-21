@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body
+        {
+          margin: 0;
+          padding: 0;
+        }
+
+        .container
+        {
+            position: fixed;
+            background-image: url(img/bg.jpg);
+            width: 100%;
+            height: 800px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .nav-bar
+        {
+            width: 100%;
+            position: relative;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+        #heading, p, a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            /* font-style: none; */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .sub-container p:hover , a:hover{
+            color: red;
+            
+        }
+
+        a:hover{
+            transform: scale(1.2);
+        }
+
+        .sub-nav
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .sub-nav a{
+            margin: 20px 40px;
+        }
+
+        .logo{
+            margin: -7px 10px;
+            font-style: italic;
+            padding: 5px;
+        }
+
+        .form-container
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sub-container{
+            position: relative;
+            display: block;
+            width: 50%;
+            padding: 40px;
+            margin-top: 30px;
+            line-height: 2;
+            border: 1px solid white;
+            margin-left: 20px;
+            border-radius: 25px;
+            box-shadow: -5px 1px 17px 0px rgba(244,243,243,0.75);
+            -webkit-box-shadow: -5px 1px 17px 0px rgba(244,243,243,0.75);
+            -moz-box-shadow: -5px 1px 17px 0px rgba(244,243,243,0.75);
+        }
+        
+        #heading
+        {
+            display: block;
+            text-align: center;
+        }
+
+        /* #heading::after
+        {
+            display: block;
+            background-color: white;
+            width: 40px;
+            height: 2px;
+        } */
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #user-input
+        {
+            width: 70%;
+            height: 200px;
+            margin: 10px;
+            border-radius: 20px;
+            border-style: none;
+        }
+
+        #btn{
+            width: 80px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #btn:hover
+        {
+            background-color: tomato;
+            border-style: none;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+    </section>
+    <nav class="nav-bar">
+        <div class="logo">
+            <p>Protri</p>
+        </div>
+        <div class= "sub-nav">
+            <a href="#">Home</a>
+            <a href="#">Contact us</a>
+            <a href="#">About us</a>
+        </div>
+    </nav>
+    <section class="form-container">
+        <section class="sub-container">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ipsa ex dicta esse quidem exercitationem perspiciatis laborum, illum repellat quisquam impedit voluptatem at aspernatur aliquam eos mollitia hic sunt earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, labore ipsa dolor maiores omnis</p>
+        </section>
+        <section class="sub-container">
+            <form action="#">
+                <div id="heading">Ask Anything </div>
+                <input type="text" id="user-input">
+                <input type="button" id="btn" value="submit">
+            </form>
+        </section>
+    </section>
+</body>
+</html>
